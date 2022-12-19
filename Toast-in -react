@@ -1,0 +1,23 @@
+*To give the toast notification on your web-page in react  =>
+
+
+step1. install toast npm in your app(project)=>  in terminal write
+       npm i react-toastify
+       
+step2.  Follow these step
+      
+           import React from 'react';
+
+  import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+  
+  function App(){
+    const notify = () => toast("Wow so easy!");
+
+    return (
+      <div>
+        <button onClick={notify}>Notify!</button>
+        <ToastContainer />
+      </div>
+    );
+  }
